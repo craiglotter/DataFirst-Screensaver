@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT type="Advanced Installer" version="1.9" modules="professional" RootPath=".">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="ProductCode" Value="{C8EB42D3-EB5C-40D5-8AAF-E8A6CDC87AB3}"/>
+    <ROW Property="ALLUSERS" Value="2"/>
+    <ROW Property="ARPPRODUCTICON" Value="controlPanelIcon.exe"/>
+    <ROW Property="BannerBitmap" Value="installer_background.jpg"/>
+    <ROW Property="DialogBitmap" Value="installer_background_dialog.jpg"/>
+    <ROW Property="Manufacturer" Value="Craig Lotter"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductVersion" Value="1.0.0"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{562D2D65-7738-49BA-8EC1-6A790B1DB89C}"/>
+    <ROW Property="ProductName" Value="DataFirst Screensaver"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="TARGETDIR" Directory_Parent="" DefaultDir="SourceDir"/>
+    <ROW Directory="WindowsFolder" Directory_Parent="TARGETDIR" DefaultDir="Window~1|WindowsFolder" IsPseudoRoot="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="DataFirst_Screensaver.scr" ComponentId="{8220FFA8-2B55-4A4E-901E-F269E4511C67}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="DataFirst_Screensaver.scr" FullKeyPath="TARGETDIR"/>
+    <ROW Component="DataFirst_Screensaver.scr_1" ComponentId="{DEAD8D32-7916-4319-915D-14EFF1E6BCCA}" Directory_="WindowsFolder" Attributes="0" Condition="" KeyPath="DataFirst_Screensaver.scr_1" FullKeyPath="WindowsFolder"/>
+    <ROW Component="Interop.ShockwaveFlashObjects.dll" ComponentId="{11C2F256-29E4-43FF-9F44-3559D865CF97}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="Interop.ShockwaveFlashObjects.dll" FullKeyPath="TARGETDIR\Interop.ShockwaveFlashObjects.dll"/>
+    <ROW Component="Interop.ShockwaveFlashObjects.dll_1" ComponentId="{27AAFEE7-A301-46EB-A145-C15F5ADBEBE1}" Directory_="WindowsFolder" Attributes="0" Condition="" KeyPath="Interop.ShockwaveFlashObjects.dll_1" FullKeyPath="WindowsFolder\Interop.ShockwaveFlashObjects.dll"/>
+    <ROW Component="AxInterop.ShockwaveFlashObjects.dll" ComponentId="{7A10C62D-0FCA-4FF3-B4C3-6A8F7EFC8804}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="AxInterop.ShockwaveFlashObjects.dll" FullKeyPath="TARGETDIR\AxInterop.ShockwaveFlashObjects.dll"/>
+    <ROW Component="AxInterop.ShockwaveFlashObjects.dll_1" ComponentId="{E50CC553-9BCA-4516-93AC-68D389710831}" Directory_="WindowsFolder" Attributes="0" Condition="" KeyPath="AxInterop.ShockwaveFlashObjects.dll_1" FullKeyPath="WindowsFolder\AxInterop.ShockwaveFlashObjects.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Feature_Parent="" Title="MainFeature" Description="Description" Display="2" Level="1" Directory_="TARGETDIR" Attributes="0" Components="AxInterop.ShockwaveFlashObjects.dll DataFirst_Screensaver.scr Interop.ShockwaveFlashObjects.dll AxInterop.ShockwaveFlashObjects.dll_1 DataFirst_Screensaver.scr_1 Interop.ShockwaveFlashObjects.dll_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="DataFirst_Screensaver.scr" Component_="DataFirst_Screensaver.scr" FileName="DataFi~1.scr|DataFirst Screensaver.scr" Version="" Language="" Attributes="" SourcePath="..\DataFirst Screensaver\Release\DataFirst Screensaver.scr" SelfReg="false"/>
+    <ROW File="DataFirst_Screensaver.scr_1" Component_="DataFirst_Screensaver.scr_1" FileName="DataFi~1.scr|DataFirst Screensaver.scr" Version="" Language="" Attributes="" SourcePath="..\DataFirst Screensaver\Release\DataFirst Screensaver.scr" SelfReg="false"/>
+    <ROW File="Interop.ShockwaveFlashObjects.dll" Component_="Interop.ShockwaveFlashObjects.dll" FileName="Intero~1.dll|Interop.ShockwaveFlashObjects.dll" Version="" Language="" Attributes="" SourcePath="..\DataFirst Screensaver\Release\Interop.ShockwaveFlashObjects.dll" SelfReg="false"/>
+    <ROW File="Interop.ShockwaveFlashObjects.dll_1" Component_="Interop.ShockwaveFlashObjects.dll_1" FileName="Intero~1.dll|Interop.ShockwaveFlashObjects.dll" Version="" Language="" Attributes="" SourcePath="..\DataFirst Screensaver\Release\Interop.ShockwaveFlashObjects.dll" SelfReg="false"/>
+    <ROW File="Simple_Screensaver.swf" Component_="DataFirst_Screensaver.scr" FileName="Simple~1.swf|Simple_Screensaver.swf" Version="" Language="" Attributes="" SourcePath="..\DataFirst Screensaver\Release\Simple_Screensaver.swf" SelfReg="false"/>
+    <ROW File="Simple_Screensaver.swf_1" Component_="DataFirst_Screensaver.scr_1" FileName="Simple~1.swf|Simple_Screensaver.swf" Version="" Language="" Attributes="" SourcePath="..\DataFirst Screensaver\Release\Simple_Screensaver.swf" SelfReg="false"/>
+    <ROW File="AxInterop.ShockwaveFlashObjects.dll" Component_="AxInterop.ShockwaveFlashObjects.dll" FileName="AxInte~1.dll|AxInterop.ShockwaveFlashObjects.dll" Version="" Language="" Attributes="" SourcePath="..\DataFirst Screensaver\Release\AxInterop.ShockwaveFlashObjects.dll" SelfReg="false"/>
+    <ROW File="AxInterop.ShockwaveFlashObjects.dll_1" Component_="AxInterop.ShockwaveFlashObjects.dll_1" FileName="AxInte~1.dll|AxInterop.ShockwaveFlashObjects.dll" Version="" Language="" Attributes="" SourcePath="..\DataFirst Screensaver\Release\AxInterop.ShockwaveFlashObjects.dll" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Source="" Target="A higher version of [ProductName] is installed."/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR" Type="307" Source="TARGETDIR" Target="[ProgramFilesFolder]\[ProductName]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="UpgradeCode" VersionMin="" VersionMax="ProductVersion" Language="" Attributes="1025" Remove=""/>
+    <ROW UpgradeCode="UpgradeCode" VersionMin="ProductVersion" VersionMax="" Language="" Attributes="2" Remove=""/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiMergeModsComponent">
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="controlPanelIcon.exe" SourcePath="Images\Application_Icon.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="installer_background.jpg" SourcePath="Images\installer_background.jpg"/>
+    <ROW Name="installer_background_dialog.jpg" SourcePath="Images\installer_background_dialog.jpg"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ATTRIBUTE name="Start" value="WelcomeDlg FolderDlg VerifyReadyDlg"/>
+    <ATTRIBUTE name="Progress" value="ProgressDlg"/>
+    <ATTRIBUTE name="End" value="ExitDialog"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiMediaComponent">
+    <ATTRIBUTE name="InstallationType" value="1"/>
+    <ATTRIBUTE name="MediaSize" value="0"/>
+    <ATTRIBUTE name="Compress" value="1"/>
+    <ATTRIBUTE name="Package" value="6"/>
+    <ATTRIBUTE name="PackageName" value="Release\Simple Screensaver Installer"/>
+    <ATTRIBUTE name="IconPath" value="Images\Application_Icon.ico?0"/>
+  </COMPONENT>
+</DOCUMENT>
